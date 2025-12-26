@@ -10,24 +10,6 @@ const _geist = Geist({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Utilitários de Imagem - Compress, Resize, Crop e Mais",
   description: "Ferramentas poderosas e gratuitas para editar, comprimir, redimensionar e converter imagens online",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
 }
 
 export default function RootLayout({

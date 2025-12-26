@@ -4,6 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "./theme-toggle"
+import Image from "next/image"
 
 export function Navigation() {
   const pathname = usePathname()
@@ -23,10 +24,10 @@ export function Navigation() {
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 via-blue-500 to-sky-500">
-            <span className="text-lg font-bold text-white">🖼️</span>
+          <div className="flex h-8 w-8 items-center justify-center">
+            <Image src="/logo.png" alt="Logo" width={32} height={32} className="rounded-lg" />
           </div>
-          <span className="hidden font-bold sm:inline">ImageTools</span>
+          <span className="hidden font-bold sm:inline">Image Utility</span>
         </Link>
 
         <div className="hidden gap-1 md:flex">
